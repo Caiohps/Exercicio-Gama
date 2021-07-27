@@ -1,5 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.main-left {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
+
+.footer-contain {
+  background-color: transparent;
+  align-items: center;
+  display: flex;
+}
+
+.footer-paragrafo {
+  margin-top: 230px;
+}
+
+.planet {
+  height: 150px;
+  width: auto;
+  position: absolute;
+  right: 0;
+  margin: 0px 100px 0 0;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+}
+
+.background--one {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background--one .block-section--one {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.background--one .block-section--one h1 {
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 32px;
+}
+
+.background--two {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 120vh;
+}
+.background--two .block-section--two {
+  display: flex;
+  align-items: center;
+}
+.background--two .block-section--two .text-block--two {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .background--two {
+    height: 1400px;
+  }
+  .background--two .block-section--two {
+    display: grid;
+    height: 75%;
+  }
+  .background--two .block-section--two p {
+    text-align: center;
+    margin-left: 0;
+    margin-top: calc(50px - 10px);
+  }
+  .background--two .block-section--two img {
+    margin-top: 50px;
+    width: 60%;
+    margin-left: 90px;
+  }
+
+  .footer-paragrafo {
+    margin-left: 75px;
+  }
+
+  .planet {
+    margin-right: 10px;
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 900px) and (min-width: 601px) {
+  .block-section--two {
+    display: grid;
+    height: 65%;
+  }
+
+  .textao {
+    font-size: 0.7rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
